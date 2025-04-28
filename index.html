@@ -68,33 +68,59 @@
             width: 100%;
         }
         #about {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-        margin: 20px;
-    }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
 
-    #about-text {
-        flex: 1 1 50%;
-        min-width: 300px;
-    }
-
-    #about-image {
-        flex: 1 1 50%;
-        min-width: 300px;
-        text-align: center;
-    }
-
-    #about-image img {
-        width: 100%;
-        height: auto;
-        border: none; /* Remove border */
-        border-radius: 0; /* No rounding */
-        box-shadow: none; /* No shadow */
-        object-fit: cover; /* Nicely scale image */
-    }
+        #about-text {
+            flex: 1 1 50%;
+            min-width: 300px;
+        }
+    
+        #about-image {
+            flex: 1 1 50%;
+            min-width: 300px;
+            text-align: center;
+        }
+    
+        #about-image img {
+            width: 100%;
+            height: auto;
+            border: none; /* Remove border */
+            border-radius: 0; /* No rounding */
+            box-shadow: none; /* No shadow */
+            object-fit: cover; /* Nicely scale image */
+        }
+        .project-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+    
+        .project-iframe {
+            flex: 1 1 45%;
+            min-width: 300px;
+            text-align: center;
+        }
+    
+        .project-iframe iframe {
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+            border: none;
+        }
+    
+        .project-description {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -133,6 +159,18 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
+             <h3>Baltimore Crime Prediction and Visualization Project</h3>
+            <div class="project-container">
+                <div class="project-iframe">
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSoejAQ2bvA0MOYR1ex3JUHBo_PzaDoXbKe5gPN9Vde3Rx242g4RJd62tyhYlNgh1LwEMemNRqBEx6/pubembed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+                </div>
+            
+                <div class="project-description">
+                    <p>
+                        This project aims to uncover spatial and temporal crime patterns across Baltimore’s neighborhoods by integrating historical crime data, weather records, and demographic variables. We evaluate the predictive power of several machine learning models to estimate crime counts by Community Statistical Area (CSA), with the goal of supporting more informed and proactive public safety planning.
+                    </p>
+                </div>
+            </div>
             <h3>
                 Baltimore Crime Prediction and Visualization Project
             </h3>
