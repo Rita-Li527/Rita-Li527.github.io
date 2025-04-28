@@ -67,30 +67,34 @@
             bottom: 0;
             width: 100%;
         }
-         #about {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
+        #about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
 
-        #about-text {
-            flex: 1 1 500px;
-        }
+    #about-text {
+        flex: 1 1 50%;
+        min-width: 300px;
+    }
 
-        #about-image {
-            flex: 1 1 300px;
-            text-align: center;
-        }
-    
-        #about-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px; /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: nice shadow */
-        }
+    #about-image {
+        flex: 1 1 50%;
+        min-width: 300px;
+        text-align: center;
+    }
+
+    #about-image img {
+        width: 100%;
+        height: auto;
+        border: none; /* Remove border */
+        border-radius: 0; /* No rounding */
+        box-shadow: none; /* No shadow */
+        object-fit: cover; /* Nicely scale image */
+    }
     </style>
 </head>
 <body>
@@ -151,7 +155,7 @@
             <h3>
                 Applied Linear Mixed Model in Correlated Genetic Data
             </h3>
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vThk_ZUje2h3BSITktdNX7k6vNVivR5blYnEcMNE9tWnLokD88AhCVceNhXxSAvDCQNW1Frgwv50IWv/pubembed?start=false&loop=false&delayms=3000&slide=id.p1" frameborder="0" width="345" height="233" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vThk_ZUje2h3BSITktdNX7k6vNVivR5blYnEcMNE9tWnLokD88AhCVceNhXxSAvDCQNW1Frgwv50IWv/pubembed?start=false&loop=false&delayms=3000&slide=id.p1" frameborder="0" width="233" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             <li> <a href="https://rpubs.com/Rita-Li527/correlated-data-project"> Mapping and Spatial Analyzing of Crime in Twin Cities</a> </li>
             <p>
                 This project examines eight years of crime data across 17 neighborhoods to identify spatial and demographic crime patterns. Using exploratory data analysis and statistical modeling, the study employs Lasso regression for predictor selection and Generalized Estimating Equations (GEE) to enhance prediction accuracy. Moran’s I-test is used to detect spatial correlations in residuals, ensuring robust model performance. Findings contribute to a deeper understanding of crime distribution and potential policy interventions.
