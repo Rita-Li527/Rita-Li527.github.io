@@ -67,6 +67,30 @@
             bottom: 0;
             width: 100%;
         }
+         #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        #about-text {
+            flex: 1 1 500px;
+        }
+
+        #about-image {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+    
+        #about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: nice shadow */
+        }
     </style>
 </head>
 <body>
@@ -84,17 +108,22 @@
     </nav>
     
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Xiyu Li, a passionate <b>Data Analyst</b> with a strong academic background in statistics and computer science, currently pursuing a Master of Science in Engineering in Data Science at <b>Johns Hopkins University</b> (expected graduation in May 2025). I hold a B.A. in Statistics and Computer Science from Macalester College, where I developed my skills in <b>machine learning</b>, <b>statistical modeling</b>, and <b>data visualization</b>.
-        </p>
-        <p>
-            I’ve led and contributed to diverse data-driven projects, including a comprehensive flight delay prediction analysis, where my team successfully built predictive models with over 82% accuracy. My work spans across transportation data analysis, spatial crime mapping, and real-time ECG recognition, demonstrating my expertise in data wrangling, modeling, and visualization using tools such as <b>Python</b>, <b>R-Studio</b>, <b>Tableau</b>, and <b>PowerBI.</b>
-        </p>
-        <p>
-            With experience in both academic and industry settings, I am proficient in applying machine learning techniques, statistical analysis, and data-driven solutions to real-world problems. I am always excited to collaborate, learn, and contribute to innovative projects that have a meaningful impact.
-        </p>
-        <!-- Add more content here -->
+        <div id="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Xiyu Li, a passionate <b>Data Analyst</b> with a strong academic background in statistics and computer science, currently pursuing a Master of Science in Engineering in Data Science at <b>Johns Hopkins University</b> (expected graduation in May 2025). I hold a B.A. in Statistics and Computer Science from Macalester College, where I developed my skills in <b>machine learning</b>, <b>statistical modeling</b>, and <b>data visualization</b>.
+            </p>
+            <p>
+                I’ve led and contributed to diverse data-driven projects, including a comprehensive flight delay prediction analysis, where my team successfully built predictive models with over 82% accuracy. My work spans across transportation data analysis, spatial crime mapping, and real-time ECG recognition, demonstrating my expertise in data wrangling, modeling, and visualization using tools such as <b>Python</b>, <b>R-Studio</b>, <b>Tableau</b>, and <b>PowerBI</b>.
+            </p>
+            <p>
+                With experience in both academic and industry settings, I am proficient in applying machine learning techniques, statistical analysis, and data-driven solutions to real-world problems. I am always excited to collaborate, learn, and contribute to innovative projects that have a meaningful impact.
+            </p>
+        </div>
+    
+        <div id="about-image">
+            <img src="https://rita-li527.github.io/photo.jpg" alt="Xiyu Li">
+        </div>
     </section>
     
     <section id="projects">
