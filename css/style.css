@@ -98,6 +98,52 @@ footer {
 }
 
 /* Project Iframe Section */
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Dark overlay and text */
+.project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
 .project-container {
     display: flex;
     align-items: center;
