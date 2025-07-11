@@ -3,123 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xiyu Li - Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4; /* Light gray background */
-            color: #333; /* Dark gray text */
-        }
-
-        header {
-            background-color: #FFC300; /* Orange header background */
-            color: #fff; /* White text */
-            text-align: center;
-            padding: 20px;
-        }
-
-        header img {
-            border-radius: 50%; /* Make the image round */
-            max-width: 150px;
-            height: auto;
-            margin-top: 10px;
-        }
-
-        nav {
-            background-color: #333; /* Dark gray navigation background */
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
-            color: #fff; /* White text for links */
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        section#projects a {
-            color: #000; /* Black text for links in the projects section */
-        }
-
-        footer {
-            background-color: #333; /* Dark gray footer background */
-            color: #fff; /* White text */
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-       .about-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 1200px; /* LIMIT the section width */
-            margin: 0 auto; /* center horizontally */
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        #about-text {
-            flex: 1 1 50%;
-            min-width: 300px;
-        }
-    
-        #about-image {
-            flex: 1 1 45%;
-            min-width: 300px;
-            text-align: center;
-        }
-    
-        #about-image img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        .project-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-    
-        .project-iframe {
-            flex: 1 1 30%;
-            min-width: 300px;
-            text-align: center;
-        }
-    
-        .project-iframe iframe {
-            width: 100%;
-            height: auto;
-            min-height: 300px;
-            border: none;
-        }
-    
-        .project-description {
-            flex: 1 1 45%;
-            min-width: 300px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -160,63 +44,16 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <div class="project-container">
-                <div class="project-iframe">
-                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSoejAQ2bvA0MOYR1ex3JUHBo_PzaDoXbKe5gPN9Vde3Rx242g4RJd62tyhYlNgh1LwEMemNRqBEx6/pubembed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+            <div class="project-card">
+              <a href="flight-delay/index.html" target="_blank">
+                <img src="pics/balcrime.png" alt="Baltimore Crime Prediction">
+                <div class="overlay">
+                  <h3>Baltimore Crime Prediction and Visualization Project</h3>
+                  <p>This project aims to uncover spatial and temporal crime patterns across Baltimore’s neighborhoods by integrating historical crime data, weather records, and demographic variables. We evaluate the predictive power of several machine learning models to estimate crime counts by Community Statistical Area (CSA), with the goal of supporting more informed and proactive public safety planning.</p>
                 </div>
-            
-                <div class="project-description">
-                    <h3>Baltimore Crime Prediction and Visualization Project</h3>
-                    <p>
-                        This project aims to uncover spatial and temporal crime patterns across Baltimore’s neighborhoods by integrating historical crime data, weather records, and demographic variables. We evaluate the predictive power of several machine learning models to estimate crime counts by Community Statistical Area (CSA), with the goal of supporting more informed and proactive public safety planning.
-                    </p>
-                </div>
-            </div>
-
-            <div class='tableauPlaceholder' id='viz1752256413739' style='position: relative'>
-              <noscript>
-                <a href='#'>
-                  <img alt='Dashboard 2' 
-                       src='https://public.tableau.com/static/images/Cr/CrimeAnalysisProject-ComparisonMap/Dashboard2/1_rss.png' 
-                       style='border: none' />
-                </a>
-              </noscript>
-              <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='CrimeAnalysisProject-ComparisonMap&#47;Dashboard2' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/Cr/CrimeAnalysisProject-ComparisonMap/Dashboard2/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='zh-CN' />
-              </object>
+              </a>
             </div>
             
-            <script type='text/javascript'>
-              var divElement = document.getElementById('viz1752256413739');
-              var vizElement = divElement.getElementsByTagName('object')[0];
-            
-              if (divElement.offsetWidth > 800) {
-                vizElement.style.width = '1024px';
-                vizElement.style.height = '795px';
-              } else if (divElement.offsetWidth > 500) {
-                vizElement.style.width = '1024px';
-                vizElement.style.height = '795px';
-              } else {
-                vizElement.style.width = '100%';
-                vizElement.style.height = '827px';
-              }
-            
-              var scriptElement = document.createElement('script');
-              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-              vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
 
 
             <li><a href="https://drive.google.com/file/d/1UbICOBGXjyUAfbpY-30-0_7BXiNfDTOd/view?usp=sharing">Flight Delay Analysis and Prediction Project</a></li>
