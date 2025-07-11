@@ -100,7 +100,7 @@ footer {
 /* Project Iframe Section */
 .project-card {
   position: relative;
-  width: 30%;           /* 30% of the container width */
+  width: 25%;           /* 30% of the container width */
   min-width: 250px;     /* Ensures it's not too narrow on small screens */
   aspect-ratio: 4 / 3;  /* Maintains a consistent shape (optional) */
   border-radius: 10px;
