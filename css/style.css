@@ -102,7 +102,7 @@ footer {
   position: relative;
   width: 30%;           /* 30% of the container width */
   min-width: 250px;     /* Ensures it's not too narrow on small screens */
-  aspect-ratio: 8 / 7;  /* Maintains a consistent shape (optional) */
+  aspect-ratio: 4 / 3;  /* Maintains a consistent shape (optional) */
   border-radius: 10px;
 /*   overflow: hidden; */
   margin: 1rem;
@@ -128,8 +128,8 @@ footer {
 /* Dark overlay and text */
 .project-card .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: -1px;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
