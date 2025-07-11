@@ -144,6 +144,13 @@ footer {
   text-align: center;
 }
 
+.project-card .overlay h3,
+.project-card .overlay p {
+  max-width: 90%;        /* Limits how wide the text can get */
+  padding: 0 10px;       /* Adds horizontal breathing room */
+  box-sizing: border-box;
+}
+
 .project-card:hover img {
   transform: scale(1.05);
   filter: brightness(70%);
