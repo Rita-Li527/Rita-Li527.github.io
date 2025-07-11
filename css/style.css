@@ -102,7 +102,7 @@ footer {
   position: relative;
   width: 30%;           /* 30% of the container width */
   min-width: 300px;     /* Ensures it's not too narrow on small screens */
-  aspect-ratio: 4 / 3;  /* Maintains a consistent shape (optional) */
+  aspect-ratio: 8 / 7;  /* Maintains a consistent shape (optional) */
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem;
@@ -140,7 +140,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;     /* <— This keeps it centered horizontally */
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 2rem;
   text-align: center;
 }
 
