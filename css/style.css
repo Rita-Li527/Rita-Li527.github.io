@@ -98,11 +98,22 @@ footer {
 }
 
 /* Project Iframe Section */
-.project-card {
+/* .project-card {
   position: relative;
   width: 30%;           /* 30% of the container width */
   min-width: 300px;     /* Ensures it's not too narrow on small screens */
   aspect-ratio: 8 / 7;  /* Maintains a consistent shape (optional) */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+.project-card {
+  position: relative;
+  width: 30%;
+  min-width: 300px;
+  height: auto; /* Let content define height */
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem;
@@ -118,9 +129,16 @@ footer {
   padding: 20px;
 }
 
-.project-card img {
+/* .project-card img {
   width: 100%;
   height: auto;
+  display: block;
+  transition: all 0.3s ease;
+} */
+.project-card img {
+  width: 100%;
+  height: 250px;         /* Try 250–300px for better space */
+  object-fit: cover;     /* Keeps aspect while cropping overflow */
   display: block;
   transition: all 0.3s ease;
 }
@@ -140,15 +158,17 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;     /* <— This keeps it centered horizontally */
-  padding: 0rem 1rem 0rem 2rem;
+  padding:1rem;
   text-align: center;
 }
 
-.project-card .overlay h3,
+
+.project-card .overlay h3 {
+  font-size: 1.1rem;
+}
+
 .project-card .overlay p {
-  max-width: 90%;        /* Limits how wide the text can get */
-  padding: 0 10px;       /* Adds horizontal breathing room */
-  box-sizing: border-box;
+  font-size: 0.95rem;
 }
 
 .project-card:hover img {
