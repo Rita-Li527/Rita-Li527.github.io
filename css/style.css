@@ -100,13 +100,22 @@ footer {
 /* Project Iframe Section */
 .project-card {
   position: relative;
-  width: 100%;
-  max-width: 300px;
+  width: 30%;           /* 30% of the container width */
+  min-width: 300px;     /* Ensures it's not too narrow on small screens */
+  aspect-ratio: 4 / 3;  /* Maintains a consistent shape (optional) */
   border-radius: 10px;
   overflow: hidden;
   margin: 1rem;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .project-card img {
@@ -130,7 +139,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;     /* <— This keeps it centered horizontally */
   padding: 1rem;
   text-align: center;
 }
