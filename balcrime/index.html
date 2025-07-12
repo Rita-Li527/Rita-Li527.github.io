@@ -1,44 +1,96 @@
-<div class='tableauPlaceholder' id='viz1752256413739' style='position: relative'>
-              <noscript>
-                <a href='#'>
-                  <img alt='Dashboard 2' 
-                       src='https://public.tableau.com/static/images/Cr/CrimeAnalysisProject-ComparisonMap/Dashboard2/1_rss.png' 
-                       style='border: none' />
-                </a>
-              </noscript>
-              <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='CrimeAnalysisProject-ComparisonMap&#47;Dashboard2' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/Cr/CrimeAnalysisProject-ComparisonMap/Dashboard2/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='zh-CN' />
-              </object>
-            </div>
-            
-            <script type='text/javascript'>
-              var divElement = document.getElementById('viz1752256413739');
-              var vizElement = divElement.getElementsByTagName('object')[0];
-            
-              if (divElement.offsetWidth > 800) {
-                vizElement.style.width = '1024px';
-                vizElement.style.height = '795px';
-              } else if (divElement.offsetWidth > 500) {
-                vizElement.style.width = '1024px';
-                vizElement.style.height = '795px';
-              } else {
-                vizElement.style.width = '100%';
-                vizElement.style.height = '827px';
-              }
-            
-              var scriptElement = document.createElement('script');
-              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-              vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baltimore Crime Prediction | Xiyu Li</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    iframe, .tableauPlaceholder {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📍 Baltimore Crime Prediction</h1>
+  <p><strong>Tools used:</strong> Python, R, ArcGIS, Tableau, XGBoost, KNN, SVM, Random Forest, MAPE, R²</p>
+
+  <p>Analyzed 14 years of crime data (750,000+ reports) across 55 neighborhoods in Baltimore City. Combined police, census, and NOAA weather datasets, integrating spatial and temporal features using ArcGIS and Python.</p>
+
+  <p>Applied spline-transformed time features and engineered weather and demographic variables to model monthly crime counts. Evaluated XGBoost, Random Forest, KNN, and SVM models, achieving strong performance (R² = 0.85, MAPE ≈ 0.15–0.22) while avoiding overfitting through validation and tuning.</p>
+
+  <p>Presented findings through an interactive Tableau dashboard, supporting targeted public safety planning with insights into crime types, risk areas, and community-level trends.</p>
+
+  <h2>📎 Project Files</h2>
+  <ul>
+    <li><a href="Crime_Prediction_Poster.pdf" target="_blank">Poster (PDF)</a></li>
+    <li><a href="Crime_Prediction_Report.pdf" target="_blank">Project Report (PDF)</a></li>
+  </ul>
+
+  <h2>📊 Tableau Dashboard</h2>
+
+  <div class='tableauPlaceholder' id='viz1752256413739' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Dashboard 2' 
+             src='https://public.tableau.com/static/images/Cr/CrimeAnalysisProject-ComparisonMap/Dashboard2/1_rss.png' 
+             style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='CrimeAnalysisProject-ComparisonMap&#47;Dashboard2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Cr/CrimeAnalysisProject-ComparisonMap/Dashboard2/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='zh-CN' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1752256413739');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = '1024px';
+      vizElement.style.height = '795px';
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = '1024px';
+      vizElement.style.height = '795px';
+    } else {
+      vizElement.style.width = '100%';
+      vizElement.style.height = '827px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <p><a href="../index.html">← Back to Portfolio</a></p>
+
+</body>
+</html>
