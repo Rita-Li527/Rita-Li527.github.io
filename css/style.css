@@ -44,8 +44,8 @@ header {
 
 .header-content img {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 20%;
+  height: auto;
   object-fit: cover;
 }
 
